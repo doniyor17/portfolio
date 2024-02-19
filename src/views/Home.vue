@@ -79,7 +79,7 @@ const jobs = ref<IJob[]>([
         company: "Raqamli Biznes",
         companyLink: "http://digitalbiznes.uz/",
         duty: 'Frontent developer',
-        years: '2021 Now - Present',
+        years: '2022 Now - Present',
         description: `We newly built a business platform for banks and enterpreneurs. Platform includes, admin dashboard with complex management, completely new own auth system with E-Imzo, Styx technologies integration on client side.`,
         techs: ['VueJS', 'Pinia', 'Vuex', 'Vite', 'Git/GitHub', 'TailwindCss', 'Bootstrap', 'TypeScript', 'Cypess', 'Agile/Scrum', 'PHP', 'C#', 'Docker', 'Symphony', '.NET', 'EImzo']
     },
@@ -87,7 +87,7 @@ const jobs = ref<IJob[]>([
         company: "Najot Ta'lim",
         companyLink: "http://najottalim.uz/",
         duty: 'Frontent developer',
-        years: '2020 Now - 2021',
+        years: '2022 Now - 2022',
         description: 'Shared knowledge to beginners about development, frontend, HTML, CSS and JavaScript Vue and its eco-system',
         techs: ['VueJS', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Vite', 'TailwindCss', 'HTML', 'CSS']
     },
@@ -95,7 +95,7 @@ const jobs = ref<IJob[]>([
         company: "Authentic Learning Labs",
         companyLink: "https://authenticlabs.io",
         duty: 'Frontent developer (internship)',
-        years: '2020 jul - 2020 sep',
+        years: '2021 jul - 2021 sep',
         description: 'Maintained current running projects, Created new pages and logics for Songbird Learning Analytics project',
         techs: ['VueJS', 'JavaScript', 'Vuex','Bootstrap', 'Slack', 'GitLab', 'HTML', 'CSS']
     },
