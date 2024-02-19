@@ -2,7 +2,7 @@
   <div class="bg-main">
     <router-view/>
   </div>
-  <div class="cursorr"/>
+  <div class="cursorr md:block"/>
 </template>
 
 <script setup lang="ts">
@@ -19,6 +19,12 @@ doc.addEventListener('mousemove', e => {
 }
 html {
   scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 780px) {
+  .cursorr {
+    display: none;
+  }
 }
 .cursorr {
   position: fixed;

@@ -11,4 +11,6 @@ const router = createRouter({
     ]
 })
 
+document.title = 'Portfolio'
+
 export default router;
