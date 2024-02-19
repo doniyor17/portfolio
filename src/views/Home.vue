@@ -103,7 +103,7 @@ const jobs = ref<IJob[]>([
         company: "Real Soft",
         companyLink: "https://realsoft.uz/",
         duty: 'Fullstack developer (internship)',
-        years: '2020 feb - 2020 apr',
+        years: '2021 feb - 2021 apr',
         description: 'Maintained current project, Wrote SQL queries for API, Created new pages',
         techs: ['VueJS', 'JavaScript', 'Vuex', 'TailwindCss', 'HTML', 'CSS']
     },
