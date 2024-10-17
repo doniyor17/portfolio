@@ -76,10 +76,18 @@ import { IJob, IProject } from '../models/interface';
 
 const jobs = ref<IJob[]>([
     {
+        company: "TechCells LLC",
+        companyLink: "https://techcells.com/",
+        duty: 'Frontent VueJS developer',
+        years: '2024 March - 2024 Aug',
+        description: `I've took part building US based start-up logistics web application. My role was to create new UI and optimizing excisting pages. I also made web pages responsive.`,
+        techs: ['VueJS', 'Vuex', 'Webpack', 'Git/GitHub', 'TailwindCss', 'Bootstrap', 'Agile/Scrum', 'PHP', 'Docker', 'Laravel']
+    },
+    {
         company: "Raqamli Biznes",
         companyLink: "http://digitalbiznes.uz/",
         duty: 'Frontent developer',
-        years: '2022 Now - Present',
+        years: '2022 Now - 2024 Jan',
         description: `We newly built a business platform for banks and enterpreneurs. Platform includes, admin dashboard with complex management, completely new own auth system with E-Imzo, Styx technologies integration on client side.`,
         techs: ['VueJS', 'Pinia', 'Vuex', 'Vite', 'Git/GitHub', 'TailwindCss', 'Bootstrap', 'TypeScript', 'Cypess', 'Agile/Scrum', 'PHP', 'C#', 'Docker', 'Symphony', '.NET', 'EImzo']
     },
@@ -110,6 +118,13 @@ const jobs = ref<IJob[]>([
 ])
 
 const projects = ref<IProject[]>([
+    {
+        title: "Top Helpers",
+        titleLink: "https://tophelpers.com/",
+        description: 'Top Helpers - platform for moving anything from one place to another. Platform serves to users to find movers for their needs.',
+        techs: ['VueJS', 'Vuex', 'Git/GitHub', 'TailwindCss', 'Bootstrap', 'Agile/Scrum', 'PHP'],
+        imgPath: 'toph'
+    },
     {
         title: "DGB",
         titleLink: "http://my.dgb.uz/",
