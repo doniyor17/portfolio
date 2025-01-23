@@ -4,30 +4,34 @@
             <div class="flex flex-col">
                 <div>
                     <span>Hi, I am</span>
-                    <h2 class="text-4xl font-bold my-5 font-sans">Doniyor Ibragimov</h2>
+                    <h2 class="text-4xl font-bold my-5 font-sans">Yusuf Ismail</h2>
                     <span>
                         Frontend engineer, who fall in love with 
-                        <a class="text-lg hover:underline pb-2" href="http://vuejs.org" target="_blank">Vue.js</a>
+                        <a class="text-lg hover:underline pb-2" href="https://vuejs.org" target="_blank">Vue.js</a>
                     </span>
                 </div>
                 <div class="text-xl my-28">
                     <div class="flex items-center w-auto link cursor-pointer">
                         <span class="deco w-[40px] h-[2px] bg-fontCol me-5"/>
-                        <a href="#about" class="text text-base md:text-lg">About</a>
+                        <a href="#about" class="text inline-block text-base md:text-lg">About</a>
                     </div>
                     <div class="flex items-center w-auto link cursor-pointer">
                         <span class="deco w-[40px] h-[2px] bg-fontCol me-5"/>
-                        <a href="#experience" class="text text-base md:text-lg">Experience</a>
+                        <a href="#technologies" class="text inline-block text-base md:text-lg">Technologies</a>
                     </div>
                     <div class="flex items-center w-auto link cursor-pointer">
                         <span class="deco w-[40px] h-[2px] bg-fontCol me-5"/>
-                        <a href="#projects" class="text text-base md:text-lg">Projects</a>
+                        <a href="#experience" class="text inline-block text-base md:text-lg">Experience</a>
+                    </div>
+                    <div class="flex items-center w-auto link cursor-pointer">
+                        <span class="deco w-[40px] h-[2px] bg-fontCol me-5"/>
+                        <a href="#projects" class="text inline-block text-base md:text-lg">Projects</a>
                     </div>
                 </div>
 
                 <div class="flex items-center justify-between w-1/2">
-                    <a class="text-2xl" href="https://t.me/dr_coder17" target="_blank">
-                        <i class="fa-brands hover:text-white fa-telegram"></i>
+                    <a class="text-2xl" href="mailto:doniyor17ibragimov@gmail.com" target="_blank">
+                        <i class="fa-solid hover:text-white fa-envelope"></i>
                     </a>
                     <a class="text-2xl" href="https://www.linkedin.com/in/yusuf-doniyor-ismail-2b87aa22a/" target="_blank">
                         <i class="fa-brands hover:text-white fa-linkedin"></i>
@@ -35,19 +39,27 @@
                     <a class="text-2xl" href="https://www.github.com/doniyor17" target="_blank">
                         <i class="fa-brands hover:text-white fa-github"></i>
                     </a>
-                    <a class="text-2xl" href="tel:+998994887352" target="_blank">
-                        <i class="fa-solid hover:text-white fa-phone-alt"></i>
-                    </a>
                 </div>
             </div>
         </div>
         <div class="md:w-1/2 bg-main md:ms-auto px-5">
             <div id="about" class="pt-10">
-                <p class="mb-5">I started coding back in the 2019, right after my master's degree in South Korea. Fast-forward to today, and I build software, teach students, manage a small team in development field.</p>
+                <p class="mb-5">I began my coding journey in 2019, right after completing my master’s degree in South Korea. Today, I build software, teach students, and manage a small team in the development field.</p> <p class="mb-5">My current focus is on building impactful products and collaborating with experienced teams to gain insights into development and business processes. My goal is to gather as much experience and knowledge as possible so I can eventually build my own team or business. I’m passionate about learning new <i class="text-blue-400">"things"</i> and understanding <i class="text-blue-400">how</i> they work at a deeper level. I also enjoy sharing my knowledge with beginners, teaching topics like development, frontend basics, HTML, CSS, and JavaScript as part of my part-time job.</p> <p>When I’m not working, I spend my free time playing sports, reading books and articles, listening to lectures, or relaxing with family and friends.</p>
+            </div>
 
-                <p class="mb-5">My main focus these days is building products and working with experienced teams, gather more and more experience and ideas about development and business process so, later I will be able to build my own team or business. I keen on learning new <i class="text-blue-400">"things"</i>, and <i class="text-blue-400">How</i> is it working under the hood. I share my knowledge to beginners about development, frontend, HTML, CSS and JavaScript in my part-time job.</p>
-
-                <p>When I am not at the computer, I mean, in my free time, I do sport, read books and articles, listen to lectures, hang out with my family and friends.</p>
+            <div id="technologies" class="mt-[60px]">
+                <h3 class="my-4 text-2xl">Technologies</h3>
+                <div class="flex flex-wrap items-center">
+                    <span v-for="tech of techs" :key="tech" class="bg-slate-700 me-2 mb-2 p-2 rounded-xl">
+                        {{ tech }}
+                    </span>
+                </div>
+                <h4 class="my-4 text-xl">Not professional skills</h4>
+                <div class="flex flex-wrap items-center">
+                    <span v-for="skill of skills" :key="skill" class="bg-slate-700 me-2 mb-2 p-2 rounded-xl">
+                        {{ skill }}
+                    </span>
+                </div>
             </div>
 
             <div id="experience" class="mt-[60px]">
@@ -74,7 +86,54 @@ import projectCard from '../components/card/project.vue';
 
 import { IJob, IProject } from '../models/interface';
 
+const techs = ref<string[]>([
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'VueJS',
+    'Vuex',
+    'Vite',
+    'Pinia',
+    'TailwindCss',
+    'Bootstrap',
+    'TypeScript',
+    'Git/GitHub',
+    'Agile/Scrum',
+    'NodeJS',
+    'BunJS',
+    'EImzo',
+    'MongoDB',
+    'PostgreSQL',
+    'Firebase / Firestore',
+    'Socket.io',
+    'Netlify',
+    'ApexCharts',
+])
+
+const skills = ref<string[]>([
+    'ReactJS',
+    'React Native',
+    'React-router',
+    'Context API',
+    'NuxtJS',
+    'Docker',
+    'Dart',
+    'Flutter',
+    'Python',
+    'Linux',
+    'Ubuntu',
+    'Kali Linux',
+])
+
 const jobs = ref<IJob[]>([
+    {
+        company: "Jacob&Jo LLC",
+        companyLink: "#",
+        duty: 'Frontent developer',
+        years: '2024 Nov - Present',
+        description: `I'm working on projects for Jacob&Jo LLC. My role is to create new UI and optimizing excisting pages. I also made web pages responsive. Most of my projects are web 3 and Decentralized apps.`,
+        techs: ['VueJS', 'Pinia', 'Git/GitHub', 'TailwindCss', 'Agile/Scrum', 'Python', 'Docker', 'Linux', 'Ubuntu']
+    },
     {
         company: "TechCells LLC",
         companyLink: "https://techcells.com/",
@@ -85,7 +144,7 @@ const jobs = ref<IJob[]>([
     },
     {
         company: "Raqamli Biznes",
-        companyLink: "http://digitalbiznes.uz/",
+        companyLink: "https://digitalbiznes.uz/",
         duty: 'Frontent developer',
         years: '2022 Now - 2024 Jan',
         description: `We newly built a business platform for banks and enterpreneurs. Platform includes, admin dashboard with complex management, completely new own auth system with E-Imzo, Styx technologies integration on client side.`,
@@ -95,7 +154,7 @@ const jobs = ref<IJob[]>([
         company: "Najot Ta'lim",
         companyLink: "http://najottalim.uz/",
         duty: 'Frontent developer',
-        years: '2022 Now - 2022',
+        years: '2021 Now - 2022 Oct',
         description: 'Shared knowledge to beginners about development, frontend, HTML, CSS and JavaScript Vue and its eco-system',
         techs: ['VueJS', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Vite', 'TailwindCss', 'HTML', 'CSS']
     },
@@ -121,7 +180,7 @@ const projects = ref<IProject[]>([
     {
         title: "Top Helpers",
         titleLink: "https://tophelpers.com/",
-        description: 'Top Helpers - platform for moving anything from one place to another. Platform serves to users to find movers for their needs.',
+        description: `Contributed to the development of TopHelpers, a platform simplifying the connection between users and moving services. Focused on building a user-friendly frontend that streamlined search and booking functionality while ensuring an efficient and responsive user experience. Collaborated with the team to optimize performance and deliver a reliable, hassle-free platform.`,
         techs: ['VueJS', 'Vuex', 'Git/GitHub', 'TailwindCss', 'Bootstrap', 'Agile/Scrum', 'PHP'],
         imgPath: 'toph'
     },
@@ -135,7 +194,7 @@ const projects = ref<IProject[]>([
     {
         title: "Mockelts",
         titleLink: "#",
-        description: 'Platform is building for taking IELTS exam online. Admin can add new questions data, manage real time exam with socket: pause/continue, after time is up move to another sections (listening, writing, reading), finish after overall time, see result of studens. Platform is in building now, not published yet',
+        description: 'Platform is building for taking IELTS exam online. Admin can add new questions data, manage real time exam with socket: pause/continue, after time is up move to another sections (listening, writing, reading), finish after overall time, see result of studens. Platform is in production, however, it is running on localhost of our client.',
         techs: ['VueJS 3', 'Pinia', 'Vite', 'Git/GitHub', 'TailwindCss', 'TypeScript', 'Socket.io', 'Agile/Scrum', 'NodeJS', 'Fastify', 'MongoDB'],
         imgPath: 'mockelts'
     },
@@ -172,7 +231,7 @@ const projects = ref<IProject[]>([
 
 <style scoped>
     .deco {
-        transition: all 200ms ease-in-out;
+        transition: all 400ms ease-in-out;
     }
     .link:hover > .deco {
         width: 60px;

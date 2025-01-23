@@ -11,7 +11,7 @@ function getImageUrl(name: string) {
 
 <template>
     <div class="card flex flex-col lg:flex-row md:items-center hover:bg-hoverBox transition-all duration-200 p-[10px] my-3 rounded-md">
-        <img class="w-full lg:w-1/2 h-auto lg:h-full object-cover" :src="getImageUrl(project.imgPath).pathname" alt="">
+        <img class="w-full lg:w-1/2 h-auto lg:h-full object-cover mb-2" :src="getImageUrl(project.imgPath).pathname" alt="">
         <div class="ps-2 !text-left">
             <a class="text-fontDark" :href="project.titleLink" target="_blank">{{ project.title }}  <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
             <p class="mb-4">{{ project.description }}</p>
